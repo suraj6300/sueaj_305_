@@ -1,0 +1,63 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOtWjQNuqzTxZkIjYhz08dm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/suraj6300/sueaj_305_/blob/main/WEEK-5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "data=[10,20,30,40,50]\n",
+        "mean=np.mean(data)\n",
+        "print(\"mean:\",mean)\n",
+        "std_dev =np.std(data,ddof=1)\n",
+        "print(\"standard deviation:\",std_dev)\n",
+        "x=40\n",
+        "z_score=(x-mean)/std_dev\n",
+        "print(\"z-score of 40\",z_score)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t74-AiIO-pO5",
+        "outputId": "0425ed25-c874-430e-d2ad-bdfab33ddba7"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mean: 30.0\n",
+            "standard deviation: 15.811388300841896\n",
+            "z-score of 40 0.6324555320336759\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
